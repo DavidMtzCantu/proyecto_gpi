@@ -1,0 +1,13 @@
+<style media="screen">
+.mat-button  {
+  background: #9C73C1;
+  color: #FFFFFF;
+}
+
+</style>
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+  <a href="/personas" mat-menu-item>Personas</a>
+  <a href="/autos" mat-menu-item>Autos</a>
+</mat-menu>
+<router-outlet></router-outlet>

@@ -1,0 +1,33 @@
+<br> <br>
+ <form novalidate (ngSubmit)="crearPersonas()" [formGroup]="persona">
+
+  <mat-form-field>
+    <input matInput
+     type="text"
+     placeholder="Nombre"
+     formControlName="nombre">
+  </mat-form-field> <br>
+
+  <mat-form-field>
+    <input matInput
+     type="text"
+     placeholder="Apellido Paterno"
+     formControlName="apellido_paterno">
+  </mat-form-field> <br>
+
+  <mat-form-field>
+    <input matInput
+     type="text"
+     placeholder="Apellido Materno"
+     formControlName="apellido_materno">
+  </mat-form-field> <br>
+
+  <mat-form-field>
+    <input matInput
+     type="text"
+     placeholder="FechaNacimiento"
+     formControlNam="fecha_nacimiento">
+  </mat-form-field> <br>
+  <button mat-raised-button color="primary" type="submit" ng-click="crearPersonas()" value="Guardar">Guardar</button>
+
+</form>
